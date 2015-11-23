@@ -8,6 +8,8 @@ header#navbar {
   @media (max-width: @screen-xs-max) {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .navbar-collapse.collapse.in {
     border: none;
@@ -17,11 +19,10 @@ header#navbar {
     text-align: center;
     width: 100%;
     position: absolute;
-    z-index: 1;
     @media (max-width: @screen-xs-max) {
       button.navbar-toggle {
         position: absolute;
-        right: 0;
+        left: 20px;
       }
     }
   }
@@ -45,13 +46,13 @@ header#navbar {
       @media (min-width: @screen-sm-min) {
         display: flex;
         flex-direction: column;
-        padding-bottom: 80px;
+        padding-bottom: 55px;
         ul.menu.nav.navbar-nav.sm {
           order: 2;
-          width: 510px;
+          width: 707px;
           margin: 0 auto;
           float: none;
-          margin-top: -20px;
+          margin-top: -16px;
         }
         .region.region-navigation {
           order: 1;
@@ -70,6 +71,8 @@ header#navbar {
       @media (max-width: @screen-xs-max) {
         width: 150px;
         margin-left: -14px;
+        top: 0;
+        z-index: 1;
       }
     }
   }
@@ -82,4 +85,76 @@ header#navbar {
   }
   margin-right: -15px;
   margin-left: -15px;
+}
+
+// Navigation: Main Menu
+ul.menu.nav.navbar-nav.sm {
+  background-color: @menu-background-color;
+  @media (max-width: @screen-sm-min) {
+    margin-bottom: 0px;
+  }
+  > li a {
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media (max-width: @screen-sm-min) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px; 
+    }
+  }
+  > li {
+    &:hover,
+    &:hover a {
+      background-color: @menu-hover-color;
+    }
+    @media (max-width: @screen-sm-min) {
+      padding-left: 20px;
+    }
+  }
+  li a {
+    background-color: @menu-background-color;
+    color: #fff;
+  }
+  > li.first {
+    @media (min-width: @screen-sm-min) {
+      margin-left: 80px;
+    }
+  }
+  > li.last {
+    @media (min-width: @screen-sm-min) {
+      margin-right: 80px;
+    }
+    a {
+      border-right: none;
+    }
+  }
+  > li.dropdown ul.dropdown-menu {
+    padding-bottom: 0;
+    padding-top: 0;
+    @media (max-width: @screen-sm-min) {
+      margin-left: -20px;
+    }
+    > li a {
+      text-transform: none;
+      text-align: left;
+      padding-left: 10px;
+      background-color: @submenu-background-color;
+      margin-top: 0;
+      margin-bottom: 0;
+      border: none;
+      color: @menu-background-color;
+      &:hover {
+        background-color: @submenu-hover-color;
+        color: #fff;
+      }
+      @media (max-width: @screen-sm-min) {
+        padding-left: 60px;
+      }
+    }
+  }
 }

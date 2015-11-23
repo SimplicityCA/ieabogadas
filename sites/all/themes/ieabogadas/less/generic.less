@@ -16,3 +16,12 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+body {
+  font-family: @font-base;
+  &.front .node-article.view-mode-full {
+    font-size: 18px;
+    @media (max-width: @screen-sm-min) {
+      margin-top: 40px;
+    }
+  }
+}

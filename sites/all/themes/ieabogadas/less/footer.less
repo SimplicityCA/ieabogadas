@@ -1,3 +1,39 @@
 footer {
+  border-top: 2px dotted #E5E5E5 !important;
+  line-height: 45px;
 	text-align: center;
+  padding-bottom: 10px !important;
+  padding-top: 15px !important;
+  .twitter-icon,
+  .facebook-icon {
+    font-size: 20px;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid;
+    text-decoration: none;
+    color: #000;
+  }
+  .twitter-icon {
+    width: 29px;
+    // color: #55acee; // twitter color
+    &:before {
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 2px;
+    }
+  }
+  .facebook-icon {
+    width: 29px;
+    // color: #3a5795; // facebook color
+    margin: 0 0 0 15px;
+    &:before {
+      margin-left: 8px;
+      margin-right: 7px;
+      margin-top: 2px;
+    }
+  }
+  span.email a {
+    color: #000;
+  }
 }

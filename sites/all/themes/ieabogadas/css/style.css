@@ -7549,6 +7549,17 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+body {
+  font-family: 'titillium_webregular';
+}
+body.front .node-article.view-mode-full {
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  body.front .node-article.view-mode-full {
+    margin-top: 40px;
+  }
+}
 header#navbar {
   position: relative;
   padding-left: 0;
@@ -7561,6 +7572,8 @@ header#navbar {
   header#navbar {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 header#navbar .navbar-collapse.collapse.in {
@@ -7571,12 +7584,11 @@ header#navbar .navbar-header {
   text-align: center;
   width: 100%;
   position: absolute;
-  z-index: 1;
 }
 @media (max-width: 767px) {
   header#navbar .navbar-header button.navbar-toggle {
     position: absolute;
-    right: 0;
+    left: 20px;
   }
 }
 header#navbar .navbar-collapse {
@@ -7598,14 +7610,14 @@ header#navbar .navbar-collapse nav[role="navigation"] {
   header#navbar .navbar-collapse nav[role="navigation"] {
     display: flex;
     flex-direction: column;
-    padding-bottom: 80px;
+    padding-bottom: 55px;
   }
   header#navbar .navbar-collapse nav[role="navigation"] ul.menu.nav.navbar-nav.sm {
     order: 2;
-    width: 510px;
+    width: 707px;
     margin: 0 auto;
     float: none;
-    margin-top: -20px;
+    margin-top: -16px;
   }
   header#navbar .navbar-collapse nav[role="navigation"] .region.region-navigation {
     order: 1;
@@ -7625,6 +7637,8 @@ header#navbar .logo img {
   header#navbar .logo img {
     width: 150px;
     margin-left: -14px;
+    top: 0;
+    z-index: 1;
   }
 }
 .region.region-header {
@@ -7636,6 +7650,125 @@ header#navbar .logo img {
     display: none;
   }
 }
+ul.menu.nav.navbar-nav.sm {
+  background-color: #6E5140;
+}
+@media (max-width: 768px) {
+  ul.menu.nav.navbar-nav.sm {
+    margin-bottom: 0px;
+  }
+}
+ul.menu.nav.navbar-nav.sm > li a {
+  text-transform: uppercase;
+  border-right: 1px solid #fff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  ul.menu.nav.navbar-nav.sm > li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+ul.menu.nav.navbar-nav.sm > li:hover,
+ul.menu.nav.navbar-nav.sm > li:hover a {
+  background-color: #341F15;
+}
+@media (max-width: 768px) {
+  ul.menu.nav.navbar-nav.sm > li {
+    padding-left: 20px;
+  }
+}
+ul.menu.nav.navbar-nav.sm li a {
+  background-color: #6E5140;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  ul.menu.nav.navbar-nav.sm > li.first {
+    margin-left: 80px;
+  }
+}
+@media (min-width: 768px) {
+  ul.menu.nav.navbar-nav.sm > li.last {
+    margin-right: 80px;
+  }
+}
+ul.menu.nav.navbar-nav.sm > li.last a {
+  border-right: none;
+}
+ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+@media (max-width: 768px) {
+  ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu {
+    margin-left: -20px;
+  }
+}
+ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu > li a {
+  text-transform: none;
+  text-align: left;
+  padding-left: 10px;
+  background-color: #CBC4C0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  color: #6E5140;
+}
+ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu > li a:hover {
+  background-color: #533C2E;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu > li a {
+    padding-left: 60px;
+  }
+}
 footer {
+  border-top: 2px dotted #E5E5E5 !important;
+  line-height: 45px;
   text-align: center;
+  padding-bottom: 10px !important;
+  padding-top: 15px !important;
+}
+footer .twitter-icon,
+footer .facebook-icon {
+  font-size: 20px;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid;
+  text-decoration: none;
+  color: #000;
+}
+footer .twitter-icon {
+  width: 29px;
+}
+footer .twitter-icon:before {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+footer .facebook-icon {
+  width: 29px;
+  margin: 0 0 0 15px;
+}
+footer .facebook-icon:before {
+  margin-left: 8px;
+  margin-right: 7px;
+  margin-top: 2px;
+}
+footer span.email a {
+  color: #000;
+}
+@font-face {
+  font-family: 'titillium_webregular';
+  src: url('../fonts/titilliumweb-regular-webfont.eot');
+  src: url('../fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/titilliumweb-regular-webfont.woff2') format('woff2'), url('../fonts/titilliumweb-regular-webfont.woff') format('woff'), url('../fonts/titilliumweb-regular-webfont.ttf') format('truetype'), url('../fonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
