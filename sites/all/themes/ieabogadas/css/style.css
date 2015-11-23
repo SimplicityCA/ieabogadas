@@ -7531,3 +7531,111 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
 }
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+header#navbar {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 40px;
+  border: none;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  header#navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+header#navbar .navbar-collapse.collapse.in {
+  border: none;
+}
+header#navbar .navbar-header {
+  float: none;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  header#navbar .navbar-header button.navbar-toggle {
+    position: absolute;
+    right: 0;
+  }
+}
+header#navbar .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+header#navbar .navbar-collapse nav[role="navigation"] {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  header#navbar .navbar-collapse nav[role="navigation"] {
+    margin-top: 60px;
+  }
+  header#navbar .navbar-collapse nav[role="navigation"] .view-display-id-main_banner_block {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  header#navbar .navbar-collapse nav[role="navigation"] {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+  header#navbar .navbar-collapse nav[role="navigation"] ul.menu.nav.navbar-nav.sm {
+    order: 2;
+    width: 510px;
+    margin: 0 auto;
+    float: none;
+    margin-top: -20px;
+  }
+  header#navbar .navbar-collapse nav[role="navigation"] .region.region-navigation {
+    order: 1;
+  }
+}
+header#navbar .logo {
+  padding-right: 0;
+  float: none !important;
+  padding-left: 0;
+}
+header#navbar .logo img {
+  width: 200px;
+  position: relative;
+  top: -79px;
+}
+@media (max-width: 767px) {
+  header#navbar .logo img {
+    width: 150px;
+    margin-left: -14px;
+  }
+}
+.region.region-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .region.region-header .view-display-id-main_banner_block_mobile {
+    display: none;
+  }
+}
+footer {
+  text-align: center;
+}
