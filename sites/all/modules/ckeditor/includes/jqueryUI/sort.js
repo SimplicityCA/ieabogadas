@@ -36,7 +36,8 @@ jQuery(document).ready(function() {
         tools = tools + "]";
         tools = tools.replace(/\[,/g, '[');
         tools = tools.replace(/\[],/g, '');
-        jQuery("#edit-toolbar").attr('value', tools);
+        // jQuery("#edit-toolbar").attr('value', tools);
+        jQuery("#edit-toolbar").val(tools);
     }
 
     Drupal.ckeditorToolbaInit = function() {

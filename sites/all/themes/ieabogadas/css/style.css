@@ -7560,6 +7560,9 @@ body.front .node-article.view-mode-full {
     margin-top: 40px;
   }
 }
+body .main-container.container-fluid {
+  max-width: 1100px;
+}
 header#navbar {
   position: relative;
   padding-left: 0;
@@ -7728,15 +7731,15 @@ ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu > li a:hover {
     padding-left: 60px;
   }
 }
-footer {
+footer.footer.container-fluid {
   border-top: 2px dotted #E5E5E5 !important;
   line-height: 45px;
   text-align: center;
   padding-bottom: 10px !important;
   padding-top: 15px !important;
 }
-footer .twitter-icon,
-footer .facebook-icon {
+footer.footer.container-fluid .twitter-icon,
+footer.footer.container-fluid .facebook-icon {
   font-size: 20px;
   overflow: hidden;
   padding-top: 2px;
@@ -7745,24 +7748,24 @@ footer .facebook-icon {
   text-decoration: none;
   color: #000;
 }
-footer .twitter-icon {
+footer.footer.container-fluid .twitter-icon {
   width: 29px;
 }
-footer .twitter-icon:before {
+footer.footer.container-fluid .twitter-icon:before {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 2px;
 }
-footer .facebook-icon {
+footer.footer.container-fluid .facebook-icon {
   width: 29px;
   margin: 0 0 0 15px;
 }
-footer .facebook-icon:before {
+footer.footer.container-fluid .facebook-icon:before {
   margin-left: 8px;
   margin-right: 7px;
   margin-top: 2px;
 }
-footer span.email a {
+footer.footer.container-fluid span.email a {
   color: #000;
 }
 @font-face {
@@ -7771,4 +7774,8 @@ footer span.email a {
   src: url('../fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/titilliumweb-regular-webfont.woff2') format('woff2'), url('../fonts/titilliumweb-regular-webfont.woff') format('woff'), url('../fonts/titilliumweb-regular-webfont.ttf') format('truetype'), url('../fonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+div.specialities-container p.fa,
+div.checks-container p.fa {
+  display: block;
 }
