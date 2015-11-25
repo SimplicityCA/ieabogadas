@@ -2,5 +2,20 @@ div.specialities-container,
 div.checks-container {
 	p.fa {
     display: block;
+    line-height: 25px;
+    &:before {
+      margin-right: 5px;
+    }
 	}
+}
+body.page-node-6 {
+  .field-name-field-image {
+    .make-sm-column(4);
+  }
+  .field-name-body {
+    .make-sm-column(8);
+    @media (max-width: @screen-xs-max) {
+      margin-top: 40px;
+    }
+  }
 }

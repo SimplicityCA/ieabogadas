@@ -7563,6 +7563,16 @@ body.front .node-article.view-mode-full {
 body .main-container.container-fluid {
   max-width: 1100px;
 }
+h3.rtecenter {
+  margin-bottom: 20px;
+}
+p.fa {
+  display: block;
+  line-height: 25px;
+}
+p.fa:before {
+  margin-right: 5px;
+}
 header#navbar {
   position: relative;
   padding-left: 0;
@@ -7759,6 +7769,9 @@ footer.footer.container-fluid .twitter-icon:before {
 footer.footer.container-fluid .facebook-icon {
   width: 29px;
   margin: 0 0 0 15px;
+  position: relative;
+  top: 8px;
+  padding-top: 4px;
 }
 footer.footer.container-fluid .facebook-icon:before {
   margin-left: 8px;
@@ -7778,4 +7791,68 @@ footer.footer.container-fluid span.email a {
 div.specialities-container p.fa,
 div.checks-container p.fa {
   display: block;
+  line-height: 25px;
+}
+div.specialities-container p.fa:before,
+div.checks-container p.fa:before {
+  margin-right: 5px;
+}
+body.page-node-6 .field-name-field-image {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  body.page-node-6 .field-name-field-image {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+body.page-node-6 .field-name-body {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  body.page-node-6 .field-name-body {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (max-width: 767px) {
+  body.page-node-6 .field-name-body {
+    margin-top: 40px;
+  }
+}
+.node-equipo.view-mode-full .group-left {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .node-equipo.view-mode-full .group-left {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (max-width: 767px) {
+  .node-equipo.view-mode-full .group-left img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}
+.node-equipo.view-mode-full .group-right {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .node-equipo.view-mode-full .group-right {
+    float: left;
+    width: 66.66666667%;
+  }
 }
