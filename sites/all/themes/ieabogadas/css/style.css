@@ -7586,6 +7586,12 @@ h5,
 h6 {
   color: #6E5140;
 }
+strong {
+  font-family: 'titillium_webbold';
+}
+.field .field-label {
+  font-family: 'titillium_webbold';
+}
 header#navbar {
   position: relative;
   padding-left: 0;
@@ -7645,6 +7651,7 @@ header#navbar .navbar-collapse nav[role="navigation"] {
     margin: 0 auto;
     float: none;
     margin-top: -16px;
+    z-index: 1;
   }
   header#navbar .navbar-collapse nav[role="navigation"] .region.region-navigation {
     order: 1;
@@ -7658,7 +7665,8 @@ header#navbar .logo {
 header#navbar .logo img {
   width: 200px;
   position: relative;
-  top: -79px;
+  top: -54px;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   header#navbar .logo img {
@@ -7802,6 +7810,13 @@ footer.footer.container-fluid span.email a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'titillium_webbold';
+  src: url('../fonts/titilliumweb-bold-webfont.eot');
+  src: url('../fonts/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/titilliumweb-bold-webfont.woff2') format('woff2'), url('../fonts/titilliumweb-bold-webfont.woff') format('woff'), url('../fonts/titilliumweb-bold-webfont.ttf') format('truetype'), url('../fonts/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body.page-node-16 .node-article.view-mode-full {
   max-width: 720px;
   margin: 0 auto;
@@ -7909,18 +7924,27 @@ body.page-node-11 .field-name-body h4 span {
   font-family: 'titillium_webregular';
   font-size: 22px;
 }
-.node-webform header {
+.node-webform h2,
+.node-p-gina-de-contacto.view-mode-full h2 {
   display: none;
 }
-.node-webform .form-actions {
-  text-align: center;
+.node-webform header,
+.node-p-gina-de-contacto.view-mode-full header {
+  display: none;
 }
-.node-webform .form-actions button {
+.node-webform .form-actions,
+.node-p-gina-de-contacto.view-mode-full .form-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+.node-webform .form-actions button,
+.node-p-gina-de-contacto.view-mode-full .form-actions button {
   width: 120px;
   background-color: #6E5140;
   color: #fff;
 }
-.node-webform .form-actions button:hover {
+.node-webform .form-actions button:hover,
+.node-p-gina-de-contacto.view-mode-full .form-actions button:hover {
   background-color: #341F15;
 }
 @media (max-width: 767px) {
@@ -7930,4 +7954,21 @@ body.page-node-11 .field-name-body h4 span {
   .node-type-webform .region.region-content {
     margin-top: 0;
   }
+}
+.field-name-field-ubicacion .field-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.field-name-field-ubicacion .field-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.field-name-field-ubicacion .field-label {
+  font-size: 18px;
+  margin-top: 20px;
 }

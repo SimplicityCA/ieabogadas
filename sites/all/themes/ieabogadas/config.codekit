@@ -4050,6 +4050,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/plugins\/min\/centerGMap-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/plugins\/min\/centerGMap-min.js",
+		"outputAbbreviatedPath": "\/plugins\/min\/min\/centerGMap-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/plugins\/smartmenus-1.0.0-beta1\/addons\/bootstrap\/jquery.smartmenus.bootstrap.css": {
 		"fileType": 16,
 		"ignore": 0,
