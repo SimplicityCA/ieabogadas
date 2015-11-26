@@ -1,12 +1,47 @@
-div.specialities-container,
-div.checks-container {
-	p.fa {
-    display: block;
-    line-height: 25px;
-    &:before {
-      margin-right: 5px;
+// div.specialities-container,
+// div.checks-container {
+// 	p.fa {
+//     display: block;
+//     line-height: 25px;
+//     &:before {
+//       margin-right: 5px;
+//     }
+// 	}
+// }
+body.page-node-16 {
+  .node-article.view-mode-full {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+.node-especialidades.view-mode-full {
+  display: inline-block;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .group-left {
+    // .make-sm-column(12);
+    display: inline-block;
+    float: left;
+    img {
+      @media (max-width: @screen-xs-max) {
+        max-width: 150px;
+        margin: 0 auto;
+      }
     }
-	}
+  }
+  .group-right {
+    // .make-sm-column(12);
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin-left: 40px;
+    h3 {
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+  }
 }
 body.page-node-6 {
   .field-name-field-image {
@@ -14,8 +49,8 @@ body.page-node-6 {
   }
   .field-name-body {
     .make-sm-column(8);
-    @media (max-width: @screen-xs-max) {
-      margin-top: 40px;
+    p span strong {
+      color: @menu-background-color;
     }
   }
 }

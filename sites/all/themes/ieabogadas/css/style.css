@@ -7573,6 +7573,19 @@ p.fa {
 p.fa:before {
   margin-right: 5px;
 }
+@media (max-width: 767px) {
+  .region.region-content {
+    margin-top: 40px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #6E5140;
+}
 header#navbar {
   position: relative;
   padding-left: 0;
@@ -7580,6 +7593,7 @@ header#navbar {
   margin-top: 40px;
   border: none;
   background-color: #fff;
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   header#navbar {
@@ -7666,7 +7680,7 @@ header#navbar .logo img {
 ul.menu.nav.navbar-nav.sm {
   background-color: #6E5140;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   ul.menu.nav.navbar-nav.sm {
     margin-bottom: 0px;
   }
@@ -7679,7 +7693,7 @@ ul.menu.nav.navbar-nav.sm > li a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   ul.menu.nav.navbar-nav.sm > li a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -7691,7 +7705,7 @@ ul.menu.nav.navbar-nav.sm > li:hover,
 ul.menu.nav.navbar-nav.sm > li:hover a {
   background-color: #341F15;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   ul.menu.nav.navbar-nav.sm > li {
     padding-left: 20px;
   }
@@ -7717,7 +7731,7 @@ ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu {
   padding-bottom: 0;
   padding-top: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu {
     margin-left: -20px;
   }
@@ -7736,7 +7750,7 @@ ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu > li a:hover {
   background-color: #533C2E;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   ul.menu.nav.navbar-nav.sm > li.dropdown ul.dropdown-menu > li a {
     padding-left: 60px;
   }
@@ -7788,14 +7802,36 @@ footer.footer.container-fluid span.email a {
   font-weight: normal;
   font-style: normal;
 }
-div.specialities-container p.fa,
-div.checks-container p.fa {
-  display: block;
-  line-height: 25px;
+body.page-node-16 .node-article.view-mode-full {
+  max-width: 720px;
+  margin: 0 auto;
 }
-div.specialities-container p.fa:before,
-div.checks-container p.fa:before {
-  margin-right: 5px;
+.node-especialidades.view-mode-full {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.node-especialidades.view-mode-full:last-child {
+  margin-bottom: 0;
+}
+.node-especialidades.view-mode-full .group-left {
+  display: inline-block;
+  float: left;
+}
+@media (max-width: 767px) {
+  .node-especialidades.view-mode-full .group-left img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}
+.node-especialidades.view-mode-full .group-right {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  margin-left: 40px;
+}
+.node-especialidades.view-mode-full .group-right h3 {
+  margin-top: 0;
+  text-transform: uppercase;
 }
 body.page-node-6 .field-name-field-image {
   position: relative;
@@ -7821,10 +7857,11 @@ body.page-node-6 .field-name-body {
     width: 66.66666667%;
   }
 }
-@media (max-width: 767px) {
-  body.page-node-6 .field-name-body {
-    margin-top: 40px;
-  }
+body.page-node-6 .field-name-body p span strong {
+  color: #6E5140;
+}
+.node-equipo.view-mode-full {
+  margin-top: 40px;
 }
 .node-equipo.view-mode-full .group-left {
   position: relative;
@@ -7854,5 +7891,43 @@ body.page-node-6 .field-name-body {
   .node-equipo.view-mode-full .group-right {
     float: left;
     width: 66.66666667%;
+  }
+}
+.node-equipo.view-mode-full .group-right h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.node-equipo.view-mode-full .group-right .label-above {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.node-equipo.view-mode-full .group-right .description-text {
+  font-size: 16px;
+}
+body.page-node-11 .field-name-body h4 span {
+  font-family: 'titillium_webregular';
+  font-size: 22px;
+}
+.node-webform header {
+  display: none;
+}
+.node-webform .form-actions {
+  text-align: center;
+}
+.node-webform .form-actions button {
+  width: 120px;
+  background-color: #6E5140;
+  color: #fff;
+}
+.node-webform .form-actions button:hover {
+  background-color: #341F15;
+}
+@media (max-width: 767px) {
+  .node-type-webform h1.page-header {
+    margin-top: 40px;
+  }
+  .node-type-webform .region.region-content {
+    margin-top: 0;
   }
 }

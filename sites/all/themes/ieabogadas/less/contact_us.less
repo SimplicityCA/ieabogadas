@@ -1,0 +1,26 @@
+.node-webform {
+	header {
+	 display: none;
+	}
+  .form-actions {
+    text-align: center;
+    button {
+      width: 120px;
+      background-color: @menu-background-color;
+      color: #fff;
+      &:hover {
+        background-color: @menu-hover-color;
+      }
+    }
+  }
+}
+.node-type-webform {
+  @media (max-width: @screen-xs-max) {
+    h1.page-header {
+      margin-top: 40px;
+    }
+    .region.region-content {
+      margin-top: 0;
+    }
+  }
+}
