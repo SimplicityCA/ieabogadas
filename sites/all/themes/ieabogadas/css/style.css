@@ -7622,6 +7622,7 @@ header#navbar .navbar-header {
   header#navbar .navbar-header button.navbar-toggle {
     position: absolute;
     left: 20px;
+    z-index: 5;
   }
 }
 header#navbar .navbar-collapse {
