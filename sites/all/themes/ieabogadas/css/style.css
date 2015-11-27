@@ -7821,12 +7821,40 @@ body.page-node-16 .node-article.view-mode-full {
   max-width: 720px;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  body.page-node-16 .node-article.view-mode-full {
+    max-width: 690px;
+  }
+}
 .node-especialidades.view-mode-full {
   display: inline-block;
   margin-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .node-especialidades.view-mode-full {
+    margin-bottom: 0;
+    float: left;
+  }
+}
+@media (max-width: 720px) {
+  .node-especialidades.view-mode-full {
+    margin-bottom: 40px;
+    float: none;
+    display: block;
+  }
+}
 .node-especialidades.view-mode-full:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .node-especialidades.view-mode-full:last-child {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 720px) {
+  .node-especialidades.view-mode-full:last-child {
+    margin-left: 0;
+  }
 }
 .node-especialidades.view-mode-full .group-left {
   display: inline-block;
@@ -7843,6 +7871,11 @@ body.page-node-16 .node-article.view-mode-full {
   float: left;
   text-align: left;
   margin-left: 40px;
+}
+@media (max-width: 767px) {
+  .node-especialidades.view-mode-full .group-right {
+    margin-left: 0;
+  }
 }
 .node-especialidades.view-mode-full .group-right h3 {
   margin-top: 0;
@@ -7948,10 +7981,10 @@ body.page-node-11 .field-name-body h4 span {
   background-color: #341F15;
 }
 @media (max-width: 767px) {
-  .node-type-webform h1.page-header {
+  .node-type-p-gina-de-contacto h1.page-header {
     margin-top: 40px;
   }
-  .node-type-webform .region.region-content {
+  .node-type-p-gina-de-contacto .region.region-content {
     margin-top: 0;
   }
 }
