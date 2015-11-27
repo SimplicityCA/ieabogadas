@@ -7592,6 +7592,9 @@ strong {
 .field .field-label {
   font-family: 'titillium_webbold';
 }
+.logged-in .tabbable.tabs-left.vertical-tabs {
+  display: none;
+}
 header#navbar {
   position: relative;
   padding-left: 0;
