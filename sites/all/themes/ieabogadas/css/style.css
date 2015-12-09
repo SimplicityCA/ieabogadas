@@ -7569,9 +7569,11 @@ h3.rtecenter {
 p.fa {
   display: block;
   line-height: 25px;
+  font-family: 'titillium_webregular';
 }
 p.fa:before {
   margin-right: 5px;
+  font-family: FontAwesome;
 }
 @media (max-width: 767px) {
   .region.region-content {
